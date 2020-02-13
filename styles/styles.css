@@ -1,0 +1,62 @@
+/*font-family: 'Nunito', sans-serif;
+font-family: 'Yeseva One', cursive;
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #A5A6A7; /*QUICK SILVER*/
+  color: #D8DAD3;
+  font-family: 'Nunito', sans-serif;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D8DAD3;
+  background: #E3B873;
+  box-shadow: 0 5px 20px
+  rgba(227, 184, 115, 0.1);
+  border: 0;
+  border-radius: 2px;
+  padding: 13px 33px;
+}
+.logo {
+  color: #E3B873;
+}
+header {
+  background: #232630; /*CHARLESTON GREEN just because black color is boring*/
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  height: 83px;
+  align-items: center;
+}
+.header-navigation {
+  list-style: none;
+  display: flex;
+}
+
+.header-navigation li {
+  margin-right: 47px;
+  text-transform: uppercase;
+}
+.hero {
+  background-image: url('../images/repair.jpg');
+  background-size: cover;
+  height: 707px;
+}
+.hero h1 {
+  text-transform: uppercase;
+}
