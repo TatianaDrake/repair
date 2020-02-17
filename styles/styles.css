@@ -5,6 +5,10 @@ font-family: 'Yeseva One', cursive;
   margin: 0;
   padding: 0;
 }
+body {
+  box-sizing: border-box;
+}
+
 html {
   background: #A5A6A7; /*QUICK SILVER*/
   color: #D8DAD3;
@@ -34,15 +38,31 @@ html {
 .logo {
   color: #E3B873;
 }
+.tnr {
+  color: #E3B873;
+}
 header {
   background: #232630; /*CHARLESTON GREEN just because black color is boring*/
 }
 .header_content {
   display: flex;
-  justify-content: space-between;
-  height: 83px;
-  align-items: center;
 }
+/********LINKS NAV****************/
+a {
+  text-decoration: none;
+}
+.header-navigation a:visited {
+color: #E3B873;
+}
+
+.header-navigation a:active {
+    color: #545E75;
+}
+
+.header-navigation a:hover {
+  color: white;
+}
+
 .header-navigation {
   list-style: none;
   display: flex;
@@ -56,7 +76,97 @@ header {
   background-image: url('../images/repair.jpg');
   background-size: cover;
   height: 707px;
+  padding-top: 194px;
+  position: relative;
+}
+.hero_overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero_content {
+  position: relative;
+  z-index: 1;
 }
 .hero h1 {
-  text-transform: uppercase;
+    text-transform: uppercase;
+  /* Turnkey Repair in the city of Rostov-on-Don */
+    font-family: Yeseva One;
+    color: #F1F2EB;
+    /*color: #F1F2EB; ISABELLINE*/
+}
+span {
+  color: #E3B873;
+}
+h1 + p {
+  font-family: 'Nunito', sans-serif;
+}
+
+p + button {
+  margin-top: 60px;
+}
+.empty_button {
+  border: 1px solid #F1F2EB;
+  font-size: 13px;
+  line-height: 27px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 13px 33px;
+  margin-left: 20px;
+}
+/*RESPONSE STYLES*/
+@media screen and (min-width:360px){
+  h1 + p {
+    font-size: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .hero h1 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 53px;
+  }
+  .header_content {
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+  }
+}
+@media screen and (max-width:359px){
+  .header-navigation li {
+    margin-right: 10px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+  p + button {
+    margin-top: 20px;
+  }
+  h1 + p {
+    font-size: small;
+    font-weight: small;
+    line-height: 20px;
+  }
+  .hero h1 {
+      font-style: small;
+      font-weight: small;
+      font-size: 25px;
+      line-height: 33px;
+  }
+  .header_content {
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+  }
+  .logo .tnr {
+    font-style: small;
+    font-weight: small;
+    font-size: 10px;
+    line-height: 10px;
+  }
 }
